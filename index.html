@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        // Redirect to the specified URL
-        window.location.href = "http://inoxart.online/#";
+        // Check if the URL ends with a `/` and replace it with `#`
+        if (window.location.href.endsWith("/")) {
+            window.location.href = window.location.href.slice(0, -1) + "#";
+        }
     </script>
 </head>
 <body>
-    <p>Redirecting to <a href="http://inoxart.online/#">http://inoxart.online/#</a>. If you are not redirected automatically, please click the link.</p>
+ 
 </body>
 </html>
